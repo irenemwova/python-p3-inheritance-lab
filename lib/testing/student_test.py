@@ -1,7 +1,13 @@
 #!/usr/bin/env python3
+import sys
+import os
 
-from student import Student
-from user import User
+# Add the project root directory to the Python path
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+sys.path.insert(0, project_root)
+
+from lib.student import Student
+from lib.user import User
         
 class TestStudent:
     '''Class "Student" in student.py'''
